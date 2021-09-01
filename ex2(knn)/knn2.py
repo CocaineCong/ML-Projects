@@ -30,8 +30,8 @@ for k in range(1, 16):
     K.append(k)
     Accuracy.append(correct / len(X))
     plt.plot(K, Accuracy)
-    plt.xlabel('Accuracy：')
-    plt.ylabel('K：')
+    plt.xlabel('Accuracy:')
+    plt.ylabel('K:')
     print('K次数:{} Accuracy正确率:{}'.format(k, correct / len(X)))
 
 plt.show()
