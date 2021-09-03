@@ -12,6 +12,7 @@ ML_Projects/
 
 - ex1: make_circle && make_moon 方法应用
 - ex2: knn 算法实现
+- ex3: k-means聚类算法
 
 ## ex1
 
@@ -32,5 +33,7 @@ ML_Projects/
 Sklearn中的datasets方法导入训练样本，并用留一法产生测试样本，用KNN分类并输出分类精度。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/cf214ca0abbb402a9e446571c30e56f3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+作图显示
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/7ff44803b6ab4262b49f3d542d41044d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
