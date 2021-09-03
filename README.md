@@ -7,7 +7,7 @@
 ML_Projects/
 ├── ex1
 ├── ex2(knn)
-└── upload
+└── ex3(k-means)
 ```
 
 - ex1: make_circle && make_moon 方法应用
