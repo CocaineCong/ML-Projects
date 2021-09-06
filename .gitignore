@@ -54,7 +54,8 @@ coverage.xml
 # Translations
 *.mo
 *.pot
-
+ex3_k-means/stones.jpg
+ex3_k-means/face_images
 # Django stuff:
 *.log
 local_settings.py

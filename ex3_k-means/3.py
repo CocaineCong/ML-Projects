@@ -1,5 +1,5 @@
 """
-Sklearn中的make_circles方法生成数据，用K-Means聚类并可视化。
+Sklearn中的make_blobs方法生成数据，用K-Means聚类并可视化。
 """
 
 from sklearn.datasets import make_circles
@@ -11,9 +11,8 @@ import sklearn.datasets as datasets
 
 
 def create_data():
-    X, y = datasets.make_circles(n_samples=400, factor=0.4, noise=0.1)
+    X, y = datasets.make_blobs(n_samples=1000, n_features=2, centers=[[1, 0], [5, 4], [2, 3], [10, 8], [7, 4]])
     return X, y
-
 
 def init_centers(data, k):
     m, n = data.shape
