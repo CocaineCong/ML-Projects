@@ -19,9 +19,7 @@ def clusterpixels(infile, k, steps):
     # 聚类， k是聚类数目
     centroids, variance = kmeans(features, k)
     code, distance = vq(features, centroids)
-    # create image with cluster labels
     codeim = code.reshape(steps, steps)
-    # codeim = imresize(codeim, im.shape[:2], 'nearest')
     codeim = np.array(Image.fromarray(codeim).resize((im.shape[1], im.shape[0])))
     return codeim
 

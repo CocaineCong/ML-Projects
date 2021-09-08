@@ -10,8 +10,6 @@ from ex1.clustering_performance import cluster_acc
 from matplotlib.pyplot import MultipleLocator
 
 
-
-
 def getinfo():
     # 获取文件并构成向量
     # 预测值为1维，把一张图片的三维压成1维，那么n张图片就是二维
@@ -44,19 +42,12 @@ def kmeans():
 
 
 def draw():
-    fig, ax = plt.subplots(nrows=10, ncols=20, sharex=True, sharey=True,figsize=[10, 5], dpi=80)
-    plt.subplots_adjust(wspace=0, hspace=0)
-    count = 0
+    result_pic = np.zeros((200 * 10, 180 * 20, 3), dtype=np.uint8)
     for i in range(10):
         for j in range(20):
-            ax[i, j].imshow(result[count])
-            count += 1
-
-    # x_major_locator = MultipleLocator(0.5)
-    # ax.xaxis.set_major_locator(x_major_locator)
-    # plt.xlim(-1.4, 1.4)  # 设置x轴间隔
-    plt.xticks([])
-    plt.yticks([])
+            result_pic[i * 200: i * 200 + 200, j * 180:j * 180 + 180] = result[i * 20 + j]
+    plt.figure()
+    plt.imshow(result_pic)
     plt.show()
 
 
