@@ -56,6 +56,7 @@ coverage.xml
 *.pot
 ex3_k-means/stones.jpg
 ex3_k-means/face_images
+ex4_PCA/face_images
 # Django stuff:
 *.log
 local_settings.py
