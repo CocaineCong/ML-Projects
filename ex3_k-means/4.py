@@ -1,7 +1,7 @@
 from scipy.cluster.vq import *
 from pylab import *
 from PIL import Image
-
+from sklearn.decomposition import LatentDirichletAllocation
 
 def clusterpixels(infile, k, steps):
     im = array(Image.open(infile))
