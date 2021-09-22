@@ -33,7 +33,7 @@ ex5_LDA/flowers_new
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
+ex6_Bayes/ex
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
